@@ -1,35 +1,42 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React from "react";
+import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
+import Home from "./pages/Home";
+import Menu from "./components/Menu";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 
-function App() {
-  const [count, setCount] = useState(0)
-
+const queryClient = new QueryClient();
+const Layout = () => {
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
+    <div className="bg-[#000000] h-screen">
+      <div className="flex h-full">
+        <div className="h-full w-[320px]  px-2 py-5 border-r-2 border-[#FFFFFF33]">
+          <Menu />
+        </div>
 
-export default App
+        <div className="w-full ">
+          <QueryClientProvider client={queryClient}>
+            <Outlet />
+          </QueryClientProvider>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+const App = () => {
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element: <Layout />,
+      children: [
+        {
+          path: "/",
+          element: <Home />,
+        },
+      ],
+    },
+  ]);
+  return <RouterProvider router={router} />;
+};
+
+export default App;
