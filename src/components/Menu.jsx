@@ -3,22 +3,22 @@ import { logoutMenu, menu } from "../data";
 
 const Menu = () => {
   return (
-    <div className="text-white h-[70%]">
+    <div className="text-white h-full flex-1 flex flex-col font-mont menu-layout">
       <h1 className="text-[#FFDF00] uppercase px-4 font-semibold my-2">
         Flame
       </h1>
-      <div className="h-full flex flex-col justify-between">
+      <div className="h-full flex flex-col justify-between  ">
         <div>
-          {menu.map((itemtem) => (
-            <Link to="" key={itemtem.id} className="flex px-2 py-2">
-              <img src={itemtem.icon} alt="" className="h-8 w-10" />
+          {menu.map((item) => (
+            <Link to="" key={item.id} className="flex px-2 py-2">
+              <img src={item.icon} alt="" className="h-8 w-10" />
               <span className="text-md inline-flex items-center">
-                {itemtem.title}
+                {item.title}
               </span>
             </Link>
           ))}
         </div>
-        <Link className="flex ">
+        <Link className="flex mb-12">
           <img src={logoutMenu.icon} alt="Logout" />
           <span className="inline-flex items-center">{logoutMenu.title}</span>
         </Link>

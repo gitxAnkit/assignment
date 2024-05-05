@@ -7,17 +7,16 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 const queryClient = new QueryClient();
 const Layout = () => {
   return (
-    <div className="bg-[#000000] h-screen">
-      <div className="flex h-full">
-        <div className="h-full w-[320px]  px-2 py-5 border-r-2 border-[#FFFFFF33]">
-          <Menu />
-        </div>
+    <div className="bg-[#000000] h-screen flex">
+      <div className="w-[320px] px-10 py-7 overflow-y-hidden">
+        // border-r-2 border-[#FFFFFF33]
+        <Menu />
+      </div>
 
-        <div className="w-full ">
-          <QueryClientProvider client={queryClient}>
-            <Outlet />
-          </QueryClientProvider>
-        </div>
+      <div className="flex-1 overflow-y-auto">
+        <QueryClientProvider client={queryClient}>
+          <Outlet />
+        </QueryClientProvider>
       </div>
     </div>
   );

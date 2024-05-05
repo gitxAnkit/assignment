@@ -1,12 +1,15 @@
 import TextCard from "./TextCard";
+import { playOptoin } from "../data";
 
 const PlayOptions = () => {
   return (
-    <div className="flex">
-      <h1 className="text-[#EFF5FB] text-2xl">Play options</h1>
-      <TextCard />
-      <TextCard />
-      <TextCard />
+    <div className="">
+      <h1 className="text-[#EFF5FB] heading">Play options</h1>
+      <div className="flex justify-evenly">
+        {playOptoin.map((item) => (
+          <TextCard title={item.title} text={item.text} key={item.id} />
+        ))}
+      </div>
     </div>
   );
 };

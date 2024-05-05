@@ -1,3 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+    .bg-player {
+      background: linear-gradient(90.39deg, rgba(45, 55, 64, 0.5) 0%, rgba(39, 45, 52, 0.5) 100%);
+    }
+  
+    .player-shadow-1 {
+      box-shadow: 1px 1px 3px 0px rgba(255, 255, 255, 0.1) inset;
+    }
+  
+    .player-shadow-2 {
+      box-shadow: 0px 24px 50px 0px rgba(0, 0, 0, 0.15);
+    }
+  
+    .player-shadow-3 {
+      box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.1);
+    }
+    .bg-leaderboard{
+    background: linear-gradient(91.06deg, #2D3740 0%, #272D34 100%);
+    }
+    .lg-shadow{
+      box-shadow: 1px 1px 2px 0px #FFFFFF1A inset;
+    }
+    .player-card{
+      width: 864px;
+      height: 62.4px;
+      padding: 11.2px 15.68px 11.2px 16px;
+      opacity: 0px;
+
+    }
+    .text-card{
+      font-family: Inter;
+      font-size: 29.84px;
+      font-weight: 700;
+      line-height: 41.77px;
+      text-align: left;
+
+    }
+    .heading{
+      font-family: Inter;
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 30.8px;
+      text-align: left;
+      margin-bottom: 20px;
+      margin-left: 24px;
+    }
+    .menu-layout{
+      width: 270px;
+      height: 902px;
+      top: 22px;
+      left: 12px;
+      gap: 0px;
+      opacity: 0px;
+
+    }
+    .text-card-layout{
+      width: 249.56px;
+      height: 118px;
+      top: 453px;
+      left: 968px;
+      gap: 0px;
+      border-radius: 21.7px 0px 0px 0px;
+      border: 1.36px 0px 0px 0px;
+      opacity: 0px;
+
+    }
+    .leaderboard-layout{
+      width: 361px;
+      height: 815px;
+      top: 762px;
+      left: 1353px;
+      gap: 0px;
+      opacity: 0px;
+
+    }
+    .lb-card-1{
+      width: 361px;
+      height: 42px;
+      top: 46.8px;
+      padding: 6.4px 54px 6.4px 6.4px;
+      gap: 0px;
+      border-radius: 999px;
+      border: 1px;
+      opacity: 0px;
+    }
+    .lb-global-card{
+      font-family: Inter;
+      font-size: 15px;
+      font-weight: 500;
+      line-height: 19.6px;
+      text-align: center;
+    }
+  }
