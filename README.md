@@ -8,14 +8,6 @@ This project is an admin dashboard implemented as part of an internship assignme
 
 [Live Demo](#) <!-- Add live link here -->
 
-## Overview
-
-The admin dashboard provides various features and functionalities for managing and monitoring data. It includes:
-
-- **Feature 1**: Description of feature 1.
-- **Feature 2**: Description of feature 2.
-- **Feature 3**: Description of feature 3.
-
 ## Installation
 
 To run the project locally, follow these steps:
@@ -51,10 +43,6 @@ To run the project locally, follow these steps:
 - React
 - Tailwind CSS
 - Figma (for design inspiration)
-
-## Acknowledgements
-
-Special thanks to [Company Name] for providing the Figma design and the opportunity to work on this project as part of the internship assignment.
 
 ## Todo
 
