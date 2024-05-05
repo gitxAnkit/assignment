@@ -5,21 +5,7 @@ import Menu from "./components/Menu";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 
 const queryClient = new QueryClient();
-// const Layout = () => {
-//   return (
-//     <div className="bg-[#000000] h-screen flex">
-//       <div className=" w-[320px] px-12 py-10 overflow-y-hidden">
-//         <Menu />
-//       </div>
 
-//       <div className="flex-1 overflow-y-auto md">
-//         <QueryClientProvider client={queryClient}>
-//           <Outlet />
-//         </QueryClientProvider>
-//       </div>
-//     </div>
-//   );
-// };
 const Layout = () => {
   return (
     <div className="bg-[#000000] h-screen flex">
