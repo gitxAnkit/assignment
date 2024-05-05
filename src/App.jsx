@@ -5,15 +5,34 @@ import Menu from "./components/Menu";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 
 const queryClient = new QueryClient();
+// const Layout = () => {
+//   return (
+//     <div className="bg-[#000000] h-screen flex">
+//       <div className=" w-[320px] px-12 py-10 overflow-y-hidden">
+//         <Menu />
+//       </div>
+
+//       <div className="flex-1 overflow-y-auto md">
+//         <QueryClientProvider client={queryClient}>
+//           <Outlet />
+//         </QueryClientProvider>
+//       </div>
+//     </div>
+//   );
+// };
 const Layout = () => {
   return (
     <div className="bg-[#000000] h-screen flex">
-      <div className="w-[320px] px-10 py-7 overflow-y-hidden">
-        // border-r-2 border-[#FFFFFF33]
+      {/* Sidebar */}
+      <div
+        className="w-64 h-full md:w-[320px] px-4 py-6 md:px-12
+       md:py-10 overflow-hidden hidden lg:block"
+      >
         <Menu />
       </div>
 
-      <div className="flex-1 overflow-y-auto">
+      {/* Main Content */}
+      <div className="flex-1 overflow-y-scroll">
         <QueryClientProvider client={queryClient}>
           <Outlet />
         </QueryClientProvider>

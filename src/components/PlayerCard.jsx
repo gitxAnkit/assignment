@@ -7,12 +7,19 @@ const PlayerCard = (props) => {
           className="rounded-full h-10 w-10 opacity-80 m-1"
           alt=""
         />
-        <span className="text-[16px] font-semibold">{props.name}</span>
+        <span className="lg:text-base text-sm font-semibold">{props.name}</span>
       </div>
       <div className="col-span-1 flex justify-between items-center">
-        <span className="text-[#CBD1E1] text-[16px]">{props.rating}</span>
-        <span className="text-[#CBD1E1] text-[16px]">({props.targets})</span>
-        <span className="text-[#6B7B8E] text-[22px]"> {props.rank}</span>
+        <span className="text-[#CBD1E1] text-xs md:text-[16px]">
+          {props.rating}
+        </span>
+        <span className="text-[#CBD1E1]  text-xs md:text-[16px]">
+          ({props.targets})
+        </span>
+        <span className="text-[#6B7B8E] text-sm md:text-[22px]">
+          {" "}
+          {props.rank}
+        </span>
       </div>
     </div>
   );

@@ -4,9 +4,15 @@ import { battleHistory } from "../data";
 
 const BattleHistory = () => {
   return (
-    <div className="text-[#EFF5FB] text-2xl flex flex-col">
+    <div
+      className="text-[#EFF5FB] lg:text-2xl 
+    lg:flex lg:flex-col md:text-lg "
+    >
       <h1 className="heading ">Battle History</h1>
-      <div className="w-[332px] player-card">
+      <div
+        className="md:w-[668px] lg:player-card 
+      md:text-sm w-[360px] sm:w-[500px]"
+      >
         {battleHistory.map((player) => (
           <PlayerCard
             key={player.id}

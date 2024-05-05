@@ -47,13 +47,11 @@
       font-weight: 600;
       line-height: 30.8px;
       text-align: left;
-      margin-bottom: 20px;
-      margin-left: 24px;
+      margin-bottom: 16px;
+      margin-left: 10px;
     }
     .menu-layout{
-      width: 270px;
-      height: 902px;
-      top: 22px;
+      /* top: 22px; */
       left: 12px;
       gap: 0px;
       opacity: 0px;

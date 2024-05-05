@@ -7,7 +7,7 @@ import Varients from "../components/Varients";
 const Home = () => {
   return (
     <div className=" text-white w-full py-20 px-10">
-      <div className="flex w-full ">
+      <div className="lg:flex lg:w-full  ">
         <div className="font-sans ">
           <div className="p-16">
             <PlayOptions />
@@ -15,18 +15,18 @@ const Home = () => {
           <div className="p-16">
             <Varients />
           </div>
+          <div className="p-16 w-full">
+            <BattleHistory />
+          </div>
         </div>
-        <div className="p-16 w-full">
-          <ProfileStats />
-        </div>
-      </div>
 
-      <div className="flex flex-1 w-full font-sans">
-        <div className="p-16 w-full">
-          <BattleHistory />
-        </div>
-        <div className="p-16 ">
-          <Leaderboard />
+        <div className=" w-full font-sans mt-20">
+          <div className="p-16 w-full">
+            <ProfileStats />
+          </div>
+          <div className="p-16 ">
+            <Leaderboard />
+          </div>
         </div>
       </div>
     </div>

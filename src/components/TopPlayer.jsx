@@ -2,10 +2,10 @@ import React from "react";
 
 const TopPlayer = (props) => {
   return (
-    <div className=" border-1 player-shadow-1  my-6 rounded-[40px] bg-player flex ">
+    <div className=" border-1 player-shadow-1 my-6 rounded-[40px] bg-player flex ">
       <img
         src={props.img}
-        className="rounded-full h-10 w-10 opacity-80 m-1 "
+        className="rounded-full h-10 w-10 opacity-80 m-1 inline-flex items-center"
         alt=""
       />
       <div className=" p-1 ">
