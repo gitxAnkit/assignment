@@ -6,7 +6,7 @@ This project is an admin dashboard implemented as part of an internship assignme
 
 <!-- Add a link to the live deployment of the project once available -->
 
-[Live Demo](#) <!-- Add live link here -->
+[Live Demo](https://sprightly-otter-e93ca2.netlify.app/) <!-- Add live link here -->
 
 ## Installation
 
